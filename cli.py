@@ -17,10 +17,9 @@ def main():
         "-op", "--output_path", type=str, help="Path to save the colored depth map"
     )
 
-
     args = parser.parse_args()
 
-    #? DepthEstimationModel sınıfından model oluşturulur.
+    # ? DepthEstimationModel sınıfından model oluşturulur.
     model = DepthEstimationModel()
 
     result = model.calculate_depthmap(args.image_path, args.output_path)

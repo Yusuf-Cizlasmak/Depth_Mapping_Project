@@ -53,7 +53,7 @@ class RunningAverage:
         self.avg = (value + self.count * self.avg) / (self.count + 1)
         self.count += 1
 
-    def get_value(self): 
+    def get_value(self):
         return self.avg
 
 
